@@ -368,7 +368,6 @@ start_vm() {
         # Base QEMU command
         local qemu_cmd=(
             qemu-system-x86_64
-            -machine accel=tcg,thread=multi
             -m "$MEMORY"
             -smp "$CPUS"
             -cpu qemu64
