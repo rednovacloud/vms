@@ -1,0 +1,22 @@
+[Unit]
+Description=UnixBot Discord Bot
+After=network.target
+
+[Service]
+User=root
+WorkingDirectory=/root
+
+# Environment Variables
+Environment="PYTHONUNBUFFERED=1"
+Environment="DISCORD_TOKEN=MTQ4Mzc0OTYxODYyMDY5ODc1NA.G_icWq.y2ImD0dS4u8lpvJ8g9ppQa1omluaapvIcpkMYQ"
+Environment="MAIN_ADMIN_ID=1480120451186294807"
+
+# Start Bot
+ExecStart=/usr/bin/python3 /root/bot.py
+
+# Auto-Restart
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
