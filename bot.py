@@ -15,8 +15,8 @@ import time
 import sqlite3
 
 # Load environment variables
-DISCORD_TOKEN = os.getenv('DISCORD_TOKEN')
-MAIN_ADMIN_ID = int(os.getenv('MAIN_ADMIN_ID', '1210291131301101618'))
+DISCORD_TOKEN = os.getenv('MTQ4Mzc0OTYxODYyMDY5ODc1NA.G_icWq.y2ImD0dS4u8lpvJ8g9ppQa1omluaapvIcpkMYQ')
+MAIN_ADMIN_ID = int(os.getenv('MAIN_ADMIN_ID', '1480120451186294807'))
 VPS_USER_ROLE_ID = int(os.getenv('VPS_USER_ROLE_ID', '1210291131301101618'))
 DEFAULT_STORAGE_POOL = os.getenv('DEFAULT_STORAGE_POOL', 'default')
 
